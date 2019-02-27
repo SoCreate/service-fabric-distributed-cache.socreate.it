@@ -1,0 +1,55 @@
+<a
+  (click)="setShowNav(true)"
+  title="Menu"
+  class="navShow">
+    <span class="navShow__label">Menu</span>
+</a>
+<aside
+  [ngClass]="{
+    'nav--open': !navClosed,
+    'nav--close': navClosed}"
+  class="nav">
+  <div class="nav__block">
+    <a
+      (click)="setShowNav(false)"
+       title="Close Menu"
+      class="nav__close">
+      <span class="nav__closeLabel">Close Menu</span>
+    </a>
+    <h5 class="nav__title">Setup</h5>
+    <a
+      routerLink="/docs/set-up/how-to-set-up"
+      routerLinkActive="nav__item--active"
+      class="nav__item"
+      (click)="setShowNav(false)">
+      Setup the cache store
+    </a>
+    <a
+      routerLink="/docs/set-up/app-setup-client-to-use-distributed-cache"
+      routerLinkActive="nav__item--active"
+      class="nav__item"
+      (click)="setShowNav(false)">
+      Setup client to use distributed cache
+    </a>
+  </div>
+  <div class="nav__block">
+    <h5 class="nav__title">How To</h5>
+    <a
+      routerLink="/docs/configuration/example-usage"
+      routerLinkActive="nav__item--active"
+      class="nav__item"
+      (click)="setShowNav(false)">
+      Example Usage
+    </a>
+    <a
+      routerLink="/docs/configuration/optional-configuration-settings"
+      routerLinkActive="nav__item--active"
+      class="nav__item"
+      (click)="setShowNav(false)">
+      Optional Configuration Settings
+    </a>
+  </div>
+</aside>
+<article class="content">
+  <router-outlet></router-outlet>
+</article>

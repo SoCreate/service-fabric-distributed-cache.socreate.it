@@ -1,0 +1,17 @@
+<h1>Setup the Cache Store</h1>
+<section markdown>
+  <blockquote>
+      <strong>Requirements:</strong> Use within a Service Fabric Cluster
+  </blockquote>
+
+  First, create a new .NET Core Stateful Service, then install the Nuget package.
+
+  ```
+  dotnet add package SoCreate.Extensions.Caching.ServiceFabric
+  ```
+
+  Extend the new stateful service using "DistributedCacheStoreService" as the base class.
+  
+  ***note: You can also set the size of the cache store*
+</section>
+<div markdown path="content/docs/set-up/set-up-the-cache-store.md"></div>
