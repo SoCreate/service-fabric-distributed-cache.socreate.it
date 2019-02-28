@@ -3,7 +3,10 @@
     About
   </h1>
   <p>
-    Add some about content
+    At SoCreate we are big fans of Service Fabric.  It is an amazingly powerful orchestrator that provides you with the ability to run containers, guest executables, or native stateful/stateless microservices you write specifically for Service Fabric.  When it came time to build out the SoCreate infrastructure, we needed to choose how we would manage our application cache.  We looked at and evaluated lots of options.  One of those options was to run Redis Cache as a guest executable in Service Fabric.  This would have worked great and would have been pretty painless to set up as a single instance.  However, setting up, running, and managing Redis Cache as a cluster would be much more complicated.  It was doable, but we would need to learn how to configure it, manage it, and monitor it.  We looked into this and wondered how much time we would spend on it.  At the same time, we also considered how much effort it would take to build a cache service as a native Service Fabric Reliable Service using the statefulness you get in Service Fabric.  After all, we already knew how to run, manage, and monitor service fabric services.  If we would spend a comparable amount of time learning to set up and run a Redis Cache cluster as we would building a native Service Fabric Cache service, it might be worth the effort to build it.  As it turns out, it totally was worth the effort, and as a result, I’d like to introduce you to Service Fabric Distributed Cache.  We decided that if it was useful to us, it might also be useful for others in the Service Fabric Community.  We’d love to hear your feedback, to work with you and your contributions, and to see where we take it.  We have lots of ideas we’d like to bring to this project in the future, so please stay tuned and follow our project on GitHub.
+  </p>
+  <p>
+    We look forward to working with you!
   </p>
 </div>
 <ul class="items">
